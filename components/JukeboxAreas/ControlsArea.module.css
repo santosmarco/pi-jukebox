@@ -1,0 +1,24 @@
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(15vh - 80px);
+}
+
+.middleSection {
+  flex-direction: row;
+}
+
+.bottomMargined {
+  margin-bottom: 10px;
+}
+
+.xMargined {
+  margin: 0px 10px;
+}

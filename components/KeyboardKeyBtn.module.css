@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.labelRight {
+  margin-left: 8px;
+}
+
+.labelLeft {
+  margin-right: 8px;
+}

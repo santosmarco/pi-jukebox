@@ -1,0 +1,40 @@
+.coverImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.trackInfoContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 25px 40px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.trackInfoArtist {
+  font-style: italic;
+}
+
+.pausedOverlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pausedIcon {
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}

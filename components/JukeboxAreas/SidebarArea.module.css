@@ -1,0 +1,23 @@
+.search {
+  margin-bottom: 20px;
+}
+
+.divider {
+  border-top-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.divider span {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.listItem {
+  border-bottom-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.listItem h4 {
+  color: white;
+}
+
+.listItem div {
+  color: rgba(255, 255, 255, 0.45) !important;
+}

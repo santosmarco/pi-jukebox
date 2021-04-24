@@ -1,4 +1,5 @@
 import moment from "moment";
+import { GetServerSideProps } from "next";
 import { useCallback, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import uniqid from "uniqid";
@@ -80,6 +81,15 @@ const App: React.FC = () => {
   } else {
     return <ErrorScreen errors={errors} />;
   }
+};
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  var ip = ctx.req.headers["x-real-ip"] || ctx.req.connection.remoteAddress;
+  console.log(ctx.req.headers, ip);
+
+  return {
+    props: {},
+  };
 };
 
 export default App;

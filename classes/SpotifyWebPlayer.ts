@@ -80,6 +80,12 @@ export default class SpotifyWebPlayer implements Player {
         await this.api.transferPlayback(device_id, {
           autoPlay: options?.autoPlay,
         });
+
+        // GET DEVICES
+        const devices = await this.api.getDevices();
+
+        console.log(devices);
+
         resolve();
       });
       await this.player.connect();
